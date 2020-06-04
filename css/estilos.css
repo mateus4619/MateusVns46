@@ -131,7 +131,7 @@ nav li {
   display: inline;
   border-right: #1c1d1a solid 1px;
   font-family: "Chelsea Market", cursive;
-  margin-top: 0px;
+  margin-top: 0;
   padding-top: 10px;
   padding-bottom: 13px;
   padding-right: 50px;
@@ -296,6 +296,7 @@ nav li:hover {
           filter: saturate(0);
   width: 290px;
   height: 290px;
+  border: solid #1c1d1a 4px;
 }
 
 #fim {
