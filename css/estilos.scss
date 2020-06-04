@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
-$fonte1:'Chelsea Market', cursive;
-$fonte2:'Chelsea Market', cursive;
-$corprimaria: #eee732;
-$corsecundaria: #1c1d1a;
+/* Portfólio Responsível Mateus Vinicius, CSS HTML e SASS puro*/
+    @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+    $fonte1:'Chelsea Market', cursive;
+    $fonte2:'Chelsea Market', cursive;
+    $corprimaria: #eee732;
+    $corsecundaria: #1c1d1a;
+    /*Configs site*/
 ::selection{
     color: #eee732;
     background-color: #1c1d1a;}
@@ -15,6 +17,7 @@ $corsecundaria: #1c1d1a;
 a{
     text-decoration: none;
 }
+/*Div inclinada*/
     .skewed {
     top: 0;
     bottom: 0;
@@ -26,6 +29,7 @@ a{
     transform: skewY(3deg);
     transform-origin: top left;
   }
+  /*HEADER MODIFICADO*/
 .semiCircle {
     position: relative;
     background: $corprimaria;
@@ -47,6 +51,7 @@ a{
         bottom: 0px;
       }
   }
+  /*..............CONTAINERS................*/
 .container-fluid{
     padding: 0;
 }
@@ -91,6 +96,7 @@ h2{
     margin: 0;
     padding:15px 0px 15px 0px ;
 }
+/*NAV BAR*/
 nav{
     background-color: $corprimaria;
     font-size: 1em;
@@ -109,7 +115,6 @@ nav{
     display: inline;
     border-right: $corsecundaria solid 1px;
     font-family: $fonte1;
-    
     padding-top: 10px;
     padding-bottom: 13px;
     padding-right: 50px;
@@ -120,7 +125,7 @@ nav{
     color: $corprimaria; 
     }
 }
-
+/*HEADER CONTENTS*/
     .frase{
         padding-left: 15px;
         width: 50%;
@@ -147,7 +152,7 @@ nav{
         display: inline-block;
         margin-left: 10%;
     }
-
+/*SECTION 1 biografia*/
 #biografia{
     background-color: $corsecundaria;
     
@@ -265,7 +270,18 @@ nav{
     }
 @media (max-width: 400px){
     .frase{
-        width: 400px;
-        
+        width: 100%;
+        padding: 0;
+    }
+    ul{
+        display: flex;
+        width: 100%; 
+        padding-left: 50px;
+        justify-content: space-between;
+        background-color: $corsecundaria;
+        li{
+            padding: 0;
+            color: $corprimaria;
+        }
     }
 }

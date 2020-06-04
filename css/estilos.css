@@ -1,5 +1,8 @@
+@charset "UTF-8";
+/* Portfólio Responsível Mateus Vinicius, CSS HTML e SASS puro*/
 @import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
+/*Configs site*/
 ::-moz-selection {
   color: #eee732;
   background-color: #1c1d1a;
@@ -18,6 +21,7 @@ a {
   text-decoration: none;
 }
 
+/*Div inclinada*/
 .skewed {
   top: 0;
   bottom: 0;
@@ -32,6 +36,7 @@ a {
           transform-origin: top left;
 }
 
+/*HEADER MODIFICADO*/
 .semiCircle {
   position: relative;
   background: #eee732;
@@ -56,6 +61,7 @@ a {
   bottom: 0px;
 }
 
+/*..............CONTAINERS................*/
 .container-fluid {
   padding: 0;
 }
@@ -109,6 +115,7 @@ h2 {
   padding: 15px 0px 15px 0px;
 }
 
+/*NAV BAR*/
 nav {
   background-color: #eee732;
   font-size: 1em;
@@ -143,6 +150,7 @@ nav li:hover {
   color: #eee732;
 }
 
+/*HEADER CONTENTS*/
 .frase {
   padding-left: 15px;
   width: 50%;
@@ -175,6 +183,7 @@ nav li:hover {
   margin-left: 10%;
 }
 
+/*SECTION 1 biografia*/
 #biografia {
   background-color: #1c1d1a;
 }
@@ -330,7 +339,23 @@ nav li:hover {
 
 @media (max-width: 400px) {
   .frase {
-    width: 400px;
+    width: 100%;
+    padding: 0;
+  }
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding-left: 50px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #1c1d1a;
+  }
+  ul li {
+    padding: 0;
+    color: #eee732;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
