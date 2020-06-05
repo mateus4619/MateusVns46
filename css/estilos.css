@@ -130,7 +130,6 @@ nav ul {
   vertical-align: top;
   height: 44px;
   padding-top: 10px;
-  padding-right: 10px;
   margin: 0;
 }
 
@@ -197,8 +196,10 @@ nav li:hover {
   text-align: center;
 }
 
-#biografia p {
+#biografia .bio p {
   padding-bottom: 20px;
+  width: 50%;
+  margin: auto;
 }
 
 #biografia .skewed {
@@ -266,6 +267,7 @@ nav li:hover {
   background-color: #eee732;
   background-image: url(../midia/head.png);
   background-attachment: fixed;
+  padding-bottom: 60px;
 }
 
 #portfolio h1 {
