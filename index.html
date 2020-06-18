@@ -6,9 +6,7 @@
     <title>Mateus Vinicius</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <script><
     
-    </script>
 </head>
 <body>
     <div class="container-fluid-nopadding">
@@ -51,10 +49,22 @@
                 <h1>Mateus Vinicius desenvolvedor Front-end</h1>
                     <h2>Sou Paulistano e assim como grande parte das pessoas: sou sonhador...</h2>
                     <p>Comecei na área de tecnologia estudando design gráfico, gostei muito dessa área e comecei a trabalhar com isso, fazia muitos trabalhos freelancer, como banners, vídeos para workshop, trailer, planfetos,etc... Então comecei a estudar programação onde literalmente me apaixonei. </p>
+                    <div class="yt">
+                        <p><b>Comecei na área de tecnologia estudando design gráfico, gostei muito dessa área e comecei a
+                            trabalhar com isso, fazia muitos trabalhos freelancer, como banners, vídeos para workshop, trailer,
+                            planfetos,etc... Então comecei a estudar programação onde literalmente me apaixonei. Abaixo tem um
+                            trabalho meu no youtube.</b></p>
+                        <p>
+                            <div class="video" data-anime="center">
+                            <iframe  src="https://www.youtube.com/embed/8qSxXzQ9NlU" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div >
+                    </div>
 
-                <a href="https://api.whatsapp.com/send?phone=5511963806188&text=Ol%C3%A1%20Mateus!%20Estou%20entrando%20em%20contato%20pois%20encontrei%20seu%20n%C3%BAmero%20em%20seu%20portfolio!" class="botao">FALE COMIGO!</a>
+                <a href="https://api.whatsapp.com/send?phone=5511963806188&text=Ol%C3%A1%20Mateus!%20Estou%20entrando%20em%20contato%20pois%20encontrei%20seu%20n%C3%BAmero%20em%20seu%20portfolio!" class="botao" data-anime="center">FALE COMIGO!</a>
                 </div>
-                <div class="cursos">
+                <div class="cursos" data-anime="center">
                     <h1>O QUE SEI FAZER?</h1>
                     <div class="programas">
                         <ul>
@@ -87,7 +97,7 @@
           <div class="col-sm-12-nopadding">
               <div class="skewed">
                 <section id="portfolio">
-                  <div class="conteudo"><div class="boxes">
+                  <div class="conteudo"><div class="boxes" data-anime="center">
                       <h1>PORTFÓLIO</h1>
                   <div class="box">
                     <a href="https://mateus4619.github.io/arma-4/"target="_blank"><img src="midia/arma.jpg"/></a>
@@ -135,19 +145,26 @@
         <footer id="fim">
             <div class="redes">
                 <div class="social"><a href="https://www.linkedin.com/in/mateus-vinicius-b3b73a110/">
-                    <img src="midia/icons/lk.png" height="64" width="64"/></a>
+                    <img src="midia/icons/lk.png" alt="LinkedIn"/></a>
                 </div>
                 <div class="social">
-                    <a href="mailto:mateus.vini1@yahoo.com.br"><img src="midia/icons/email.png" height="64" width="64"/></a>
+                    <a href="mailto:mateus.vini1@yahoo.com.br"><img src="midia/icons/email.png" alt="E-mail"/></a>
                 </div>
-                <a href="https://www.instagram.com/2k18_vinicius/">
-                    <div class="social"><img src="midia/icons/insta.png" height="64" width="64"/></div>
-                </a>
-                <a href="https://www.youtube.com/channel/UCn3Dvx1XxWK0Ga2E91GjlQw?">
-                    <div class="social"><img src="midia/icons/yt.png" height="64" width="64"/></div>
-                </a>
+                
+                    <div class="social">
+                        <a href="https://www.instagram.com/2k18_vinicius/">
+                        <img src="midia/icons/insta.png" alt="Instagram"/>
+                    </a>
+                    </div>
+                
+                
+                    <div class="social">
+                        <a href="https://www.youtube.com/channel/UCn3Dvx1XxWK0Ga2E91GjlQw?">
+                    <img src="midia/icons/yt.png" alt="YouTube"/></a>
+                </div>
+                
                 <div class="social">
-                    <a href="https://api.whatsapp.com/send?phone=5511963806188&text=Ol%C3%A1%20Mateus!%20Estou%20entrando%20em%20contato%20pois%20encontrei%20seu%20n%C3%BAmero%20em%20seu%20portfolio!"> <img src="midia/icons/wp.png" height="64" width="64"/></a></div>
+                    <a href="https://api.whatsapp.com/send?phone=5511963806188&text=Ol%C3%A1%20Mateus!%20Estou%20entrando%20em%20contato%20pois%20encontrei%20seu%20n%C3%BAmero%20em%20seu%20portfolio!"> <img src="midia/icons/wp.png" alt="WhatsApp"/></a></div>
             </div>
                 <div class="techa">
                     <img src="midia/ta.png" /></div>
@@ -156,6 +173,27 @@
             </div>
         </footer>
     </div>
-    
+    <!-- JavaScript -->
+    <script>
+        const elementos = document.querySelectorAll('[data-anime]');
+        const animateClass = 'animate';
+  
+          function animaScroll(){
+              const topoPagina= window.pageYOffset;
+            
+              elementos.forEach(function(elemento){
+                  
+                  if(topoPagina > elemento.offsetTop){
+                  elemento.classList.add(animateClass)
+                  }
+              });
+          }
+  
+          if(elementos.length){
+              window.addEventListener('scroll',function(){
+                  animaScroll();
+              })
+          }
+      </script>
 </body>
 </html>

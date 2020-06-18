@@ -60,10 +60,10 @@ body{
     height: auto;
 }
 .botao {
-	box-shadow:inset 0px 34px 0px -15px #d4d4d4;
-	background-color:#d6d6d6;
+	
 	border-radius:4px;
-	border:2px solid #949494;
+    border:2px solid #949494;
+    background-color: #E4E1DB;
 	display:inline-block;
 	color:#1c1d1a;
 	font-family:$fonte2;
@@ -71,9 +71,12 @@ body{
 	font-weight:bold;
 	padding:9px 27px;
 	text-decoration:none;
-	text-shadow:0px -1px 0px #242424;
+    text-shadow:0px -1px 0px #242424;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
     &:hover {    
-	background-color:gray;
+    background-color: #808080;
     }
     :active {
     padding-top:1px;
@@ -154,15 +157,14 @@ nav{
 /*SECTION 1 biografia*/
 #biografia{
     background-color: $corsecundaria;
-    
     .bio{
         width: 100%;
         display: inline-block;
         color: #ffffff;
-        padding-top: 30px;
         display: inline-block;
         text-align: center;
     p{
+        padding-top: 30px;
         padding-bottom: 20px;
         width: 50%;
         margin: auto;
@@ -177,7 +179,8 @@ nav{
         vertical-align: top;
         text-align: center;
         width: 100%;
-  
+        padding-bottom: 60px;
+        margin-top: 60px;
 .programas {
         transition-property: all;
         transition-timing-function: linear;
@@ -207,15 +210,14 @@ nav{
     }
     }}}
 }
-
+/*portofólio projetos*/
 #portfolio{
     padding-top: 30px;
     text-align: center;
     background-color: $corprimaria;
     background-image: url(../midia/head.png);
     background-attachment: fixed;
-    padding-bottom: 60px;
-    
+    padding-bottom: 90px;
      h1{
     margin-top: 0;
     padding-top: 10px;
@@ -225,6 +227,7 @@ nav{
     text-shadow: 2px 2px 2px black;
     font-size: 3em;
     text-align: center;
+    margin-bottom: 60px;
     }
     .box{
     width: 330px;
@@ -236,6 +239,7 @@ nav{
     transition-property: all;
     transition-timing-function: linear;
     transition: .3s;
+    box-shadow: 1px 2px 4px 1px black;
     img{
         width: 100%;
         height: 100%;
@@ -247,18 +251,27 @@ nav{
     height: 290px;
     border: solid $corsecundaria 4px;
     }}
+    /*Footer*/
 #fim{
     background-color: $corsecundaria;
     background-image: url(../midia/patas.png);
-
     .redes{
         display: flex;
         justify-content: center;
-        padding-top: 60px;
+        padding-top: 100px;
+        width: 100%;
+    }
+    .social{
+        margin: 10px;
+      
+        img{
+            width: 100%;
+        }
     }
     .techa{
         text-align: center;
         margin-top: 20px;
+        margin-bottom: 30px;
     }
     .contato{
         text-align: center;
@@ -268,6 +281,7 @@ nav{
 .conteudo{
         transform: skewY(-3deg);
     }
+
 @media (max-width: 400px){
     .frase{
         width: 100%;
@@ -284,4 +298,14 @@ nav{
             color: $corprimaria;
         }
     }
+}
+[data-anime]{
+    opacity: 0;
+    transition: 3s;
+}
+[data-anime="center"]{
+    opacity: 0;
+}
+[data-anime].animate{
+    opacity: 1;
 }

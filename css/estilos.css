@@ -72,11 +72,9 @@ body {
 }
 
 .botao {
-  -webkit-box-shadow: inset 0px 34px 0px -15px #d4d4d4;
-          box-shadow: inset 0px 34px 0px -15px #d4d4d4;
-  background-color: #d6d6d6;
   border-radius: 4px;
   border: 2px solid #949494;
+  background-color: #E4E1DB;
   display: inline-block;
   color: #1c1d1a;
   font-family: "Chelsea Market", cursive;
@@ -85,10 +83,16 @@ body {
   padding: 9px 27px;
   text-decoration: none;
   text-shadow: 0px -1px 0px #242424;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .botao:hover {
-  background-color: gray;
+  background-color: #808080;
 }
 
 .botao :active {
@@ -191,12 +195,12 @@ nav li:hover {
   width: 100%;
   display: inline-block;
   color: #ffffff;
-  padding-top: 30px;
   display: inline-block;
   text-align: center;
 }
 
 #biografia .bio p {
+  padding-top: 30px;
   padding-bottom: 20px;
   width: 50%;
   margin: auto;
@@ -213,6 +217,8 @@ nav li:hover {
   vertical-align: top;
   text-align: center;
   width: 100%;
+  padding-bottom: 60px;
+  margin-top: 60px;
 }
 
 #biografia .cursos .programas {
@@ -261,13 +267,14 @@ nav li:hover {
           filter: saturate(0);
 }
 
+/*portofólio projetos*/
 #portfolio {
   padding-top: 30px;
   text-align: center;
   background-color: #eee732;
   background-image: url(../midia/head.png);
   background-attachment: fixed;
-  padding-bottom: 60px;
+  padding-bottom: 90px;
 }
 
 #portfolio h1 {
@@ -279,6 +286,7 @@ nav li:hover {
   text-shadow: 2px 2px 2px black;
   font-size: 3em;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 #portfolio .box {
@@ -294,6 +302,8 @@ nav li:hover {
           transition-timing-function: linear;
   -webkit-transition: .3s;
   transition: .3s;
+  -webkit-box-shadow: 1px 2px 4px 1px black;
+          box-shadow: 1px 2px 4px 1px black;
 }
 
 #portfolio .box img {
@@ -309,6 +319,7 @@ nav li:hover {
   border: solid #1c1d1a 4px;
 }
 
+/*Footer*/
 #fim {
   background-color: #1c1d1a;
   background-image: url(../midia/patas.png);
@@ -321,12 +332,22 @@ nav li:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 60px;
+  padding-top: 100px;
+  width: 100%;
+}
+
+#fim .social {
+  margin: 10px;
+}
+
+#fim .social img {
+  width: 100%;
 }
 
 #fim .techa {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 #fim .contato {
@@ -359,5 +380,19 @@ nav li:hover {
     padding: 0;
     color: #eee732;
   }
+}
+
+[data-anime] {
+  opacity: 0;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+[data-anime="center"] {
+  opacity: 0;
+}
+
+[data-anime].animate {
+  opacity: 1;
 }
 /*# sourceMappingURL=estilos.css.map */
