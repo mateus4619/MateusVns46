@@ -29,11 +29,32 @@ a{
     transform: skewY(3deg);
     transform-origin: top left;
   }
+  /*botão Whatsapp*/
+  .zap{
+      position: fixed;
+      z-index: 4;
+      bottom: 5px;
+      right: 10px;
+      font-size: 15vh;
+      color: green;
+      &:hover{
+        font-size: 17vh;
+        transition: ease-in-out 1s ;
+      }
+      a{
+          text-decoration: none;
+          color: green;
+      }
+  }
   /*HEADER MODIFICADO*/
 .semiCircle {
     position: relative;
-    background: $corprimaria;
+    background: url("../midia/capa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: auto;
+    color: #ffffff;
+    text-shadow: 2px 2px #1c1d1a;
     ::before {
         position: absolute;
         content:'';
@@ -60,7 +81,6 @@ body{
     height: auto;
 }
 .botao {
-	
 	border-radius:4px;
     border:2px solid #949494;
     background-color: #E4E1DB;
@@ -103,25 +123,25 @@ h2{
 nav{
     background-color: $corprimaria;
     font-size: 1em;
-    .logo{
-        position: absolute;
-    }
+    display: flex;
+   position: fixed;
+   z-index: 1;
+   background-color: transparent;
     ul{
-    text-align: right;
-    vertical-align: top;
-    height: 44px;
-    padding-top: 10px;
-    margin: 0;
+    display: flex;
+    margin: 0 0;
+    align-items: center;
+    
     }
     li{
-    display: inline;
-    border-right: $corsecundaria solid 1px;
     font-family: $fonte1;
-    padding-top: 10px;
-    padding-bottom: 13px;
-    padding-right: 50px;
-    padding-left: 50px;
-    color: $corsecundaria;}
+    color: #ffff;    
+    text-decoration: none;
+    padding-right: 10px;
+    list-style: none;
+    width: 100%;
+    text-shadow: 2px 2px #1c1d1a;
+}
     li:hover{
     background: $corsecundaria;   
     color: $corprimaria; 
@@ -230,10 +250,10 @@ nav{
     margin-bottom: 60px;
     }
     .box{
-    width: 330px;
-    height: 330px;
-    border: 4px solid #ffffff;
-    border-radius: 4px;
+    width: 45vh;
+    height: 45vh;
+    border: 2px solid #d6d6d6;
+    border-radius: 3px;
     overflow: hidden;
     display: inline-block;
     transition-property: all;
@@ -287,15 +307,23 @@ nav{
         width: 100%;
         padding: 0;
     }
+    nav{
+        position: relative;
+        background-color: $corsecundaria;
+        flex-direction: column;
+        align-items: center;
+    }
     ul{
         display: flex;
         width: 100%; 
-        padding-left: 50px;
         justify-content: space-between;
         background-color: $corsecundaria;
+        flex-direction: column;
+        padding: 0px;
         li{
             padding: 0;
             color: $corprimaria;
+            
         }
     }
 }

@@ -36,11 +36,36 @@ a {
           transform-origin: top left;
 }
 
+/*botão Whatsapp*/
+.zap {
+  position: fixed;
+  z-index: 4;
+  bottom: 5px;
+  right: 10px;
+  font-size: 15vh;
+  color: green;
+}
+
+.zap:hover {
+  font-size: 17vh;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+}
+
+.zap a {
+  text-decoration: none;
+  color: green;
+}
+
 /*HEADER MODIFICADO*/
 .semiCircle {
   position: relative;
-  background: #eee732;
+  background: url("../midia/capa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: auto;
+  color: #ffffff;
+  text-shadow: 2px 2px #1c1d1a;
 }
 
 .semiCircle ::before {
@@ -123,29 +148,32 @@ h2 {
 nav {
   background-color: #eee732;
   font-size: 1em;
-}
-
-nav .logo {
-  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  background-color: transparent;
 }
 
 nav ul {
-  text-align: right;
-  vertical-align: top;
-  height: 44px;
-  padding-top: 10px;
-  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav li {
-  display: inline;
-  border-right: #1c1d1a solid 1px;
   font-family: "Chelsea Market", cursive;
-  padding-top: 10px;
-  padding-bottom: 13px;
-  padding-right: 50px;
-  padding-left: 50px;
-  color: #1c1d1a;
+  color: #ffff;
+  text-decoration: none;
+  padding-right: 10px;
+  list-style: none;
+  width: 100%;
+  text-shadow: 2px 2px #1c1d1a;
 }
 
 nav li:hover {
@@ -290,10 +318,10 @@ nav li:hover {
 }
 
 #portfolio .box {
-  width: 330px;
-  height: 330px;
-  border: 4px solid #ffffff;
-  border-radius: 4px;
+  width: 45vh;
+  height: 45vh;
+  border: 2px solid #d6d6d6;
+  border-radius: 3px;
   overflow: hidden;
   display: inline-block;
   -webkit-transition-property: all;
@@ -365,16 +393,31 @@ nav li:hover {
     width: 100%;
     padding: 0;
   }
+  nav {
+    position: relative;
+    background-color: #1c1d1a;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    padding-left: 50px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     background-color: #1c1d1a;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px;
   }
   ul li {
     padding: 0;
