@@ -1,0 +1,339 @@
+/* Portfólio Responsível Mateus Vinicius, CSS HTML e SASS puro*/
+    @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+    $fonte1:'Chelsea Market', cursive;
+    $fonte2:'Chelsea Market', cursive;
+    $corprimaria: #eee732;
+    $corsecundaria: #1c1d1a;
+    /*Configs site*/
+::selection{
+    color: #eee732;
+    background-color: #1c1d1a;}
+
+    .nopadding{
+        padding-left: 0;
+        padding-right: 0;
+    }
+a{
+    text-decoration: none;
+}
+/*Div inclinada*/
+    .skewed {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transform: skewY(3deg);
+    transform-origin: top left;
+  }
+  /*botão Whatsapp*/
+  .zap{
+      position: fixed;
+      z-index: 4;
+      bottom: 5px;
+      right: 10px;
+      font-size: 15vh;
+      color: green;
+      &:hover{
+        font-size: 17vh;
+        transition: ease-in-out 1s ;
+      }
+      a{
+          text-decoration: none;
+          color: green;
+      }
+  }
+  /*HEADER MODIFICADO*/
+.semiCircle {
+    position: relative;
+    background: url("../midia/capa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    color: #ffffff;
+    text-shadow: 2px 2px #1c1d1a;
+    ::before {
+        position: absolute;
+        content:'';
+        left: 50%;
+        z-index: 10;
+        width: 85px;
+        height: 90px;
+        border-radius: 50%;
+        background: $corprimaria;
+        background-image: url(../midia/foto.png);
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        transform: translateX(-50%) translateY(50%);
+        bottom: 0px;
+      }
+  }
+  /*..............CONTAINERS................*/
+.container-fluid{
+    padding: 0;
+}
+body{
+    margin: 0;
+    height: auto;
+}
+.botao {
+	border-radius:4px;
+    border:2px solid #949494;
+    background-color: #E4E1DB;
+	display:inline-block;
+	color:#1c1d1a;
+	font-family:$fonte2;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 27px;
+	text-decoration:none;
+    text-shadow:0px -1px 0px #242424;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    &:hover {    
+    background-color: #808080;
+    }
+    :active {
+    padding-top:1px;
+    }}
+
+p{
+    font-size: 1em;
+    margin: 0;
+    font-family: $fonte2;
+}
+h1{
+    font-size: 2em;
+    font-family: $fonte1;
+    margin: 0;
+    padding:15px 0px 15px 0px ;
+}
+h2{
+    font-size: 1.3em;
+    font-family: $fonte1;
+    margin: 0;
+    padding:15px 0px 15px 0px ;
+}
+/*NAV BAR*/
+nav{
+    background-color: $corprimaria;
+    font-size: 1em;
+    display: flex;
+   position: fixed;
+   z-index: 1;
+   background-color: transparent;
+    ul{
+    display: flex;
+    margin: 0 0;
+    align-items: center;
+    
+    }
+    li{
+    font-family: $fonte1;
+    color: #ffff;    
+    text-decoration: none;
+    padding-right: 10px;
+    list-style: none;
+    width: 100%;
+    text-shadow: 2px 2px #1c1d1a;
+}
+    li:hover{
+    background: $corsecundaria;   
+    color: $corprimaria; 
+    }
+}
+/*HEADER CONTENTS*/
+    .frase{
+        padding-left: 15px;
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+        text-indent: right;
+        vertical-align: top;
+        padding-top: 30px;
+    h2{
+        padding-left: 15px;
+    }
+    .botao{
+        margin-top: 20px;
+    }
+    }
+    .dog{
+        display: inline-block;
+        text-align: right;
+    img{
+        height: 350px;
+    }
+    }
+    .ta{
+        display: inline-block;
+        margin-left: 10%;
+    }
+/*SECTION 1 biografia*/
+#biografia{
+    background-color: $corsecundaria;
+    .bio{
+        width: 100%;
+        display: inline-block;
+        color: #ffffff;
+        display: inline-block;
+        text-align: center;
+    p{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        width: 50%;
+        margin: auto;
+    }}
+    .skewed{
+        background: $corsecundaria;
+        background-image: url(../midia/patas.png);
+    }
+.cursos{
+        display: inline-block;
+        color: #ffffff;
+        vertical-align: top;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 60px;
+        margin-top: 60px;
+.programas {
+        transition-property: all;
+        transition-timing-function: linear;
+        transition: 1s;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            justify-content: center;
+            padding: 0;
+        }
+        li{
+            border: none;
+            padding-right: 10px;
+        }
+        
+    :hover{
+        transform: scale(1.1);
+    }
+    a{
+        transition-property: all;
+        transition-timing-function: linear;
+        transition: 1s;
+    
+    :hover{
+        filter: saturate(0);
+    }
+    }}}
+}
+/*portofólio projetos*/
+#portfolio{
+    padding-top: 30px;
+    text-align: center;
+    background-color: $corprimaria;
+    background-image: url(../midia/head.png);
+    background-attachment: fixed;
+    padding-bottom: 90px;
+     h1{
+    margin-top: 0;
+    padding-top: 10px;
+    color: white;
+    font-family: $fonte1;
+    width: 100%;
+    text-shadow: 2px 2px 2px black;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 60px;
+    }
+    .box{
+    width: 45vh;
+    height: 45vh;
+    border: 2px solid #d6d6d6;
+    border-radius: 3px;
+    overflow: hidden;
+    display: inline-block;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition: .3s;
+    box-shadow: 1px 2px 4px 1px black;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    }
+    .box:hover{
+    filter: saturate(0);
+    width: 290px;
+    height: 290px;
+    border: solid $corsecundaria 4px;
+    }}
+    /*Footer*/
+#fim{
+    background-color: $corsecundaria;
+    background-image: url(../midia/patas.png);
+    .redes{
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+        width: 100%;
+    }
+    .social{
+        margin: 10px;
+      
+        img{
+            width: 100%;
+        }
+    }
+    .techa{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .contato{
+        text-align: center;
+        color: $corprimaria;
+    }
+}
+.conteudo{
+        transform: skewY(-3deg);
+    }
+
+@media (max-width: 400px){
+    .frase{
+        width: 100%;
+        padding: 0;
+    }
+    nav{
+        position: relative;
+        background-color: $corsecundaria;
+        flex-direction: column;
+        align-items: center;
+    }
+    ul{
+        display: flex;
+        width: 100%; 
+        justify-content: space-between;
+        background-color: $corsecundaria;
+        flex-direction: column;
+        padding: 0px;
+        li{
+            padding: 0;
+            color: $corprimaria;
+            
+        }
+    }
+}
+[data-anime]{
+    opacity: 0;
+    transition: 3s;
+}
+[data-anime="center"]{
+    opacity: 0;
+}
+[data-anime].animate{
+    opacity: 1;
+}

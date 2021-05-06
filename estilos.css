@@ -1,0 +1,441 @@
+@charset "UTF-8";
+/* Portfólio Responsível Mateus Vinicius, CSS HTML e SASS puro*/
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
+/*Configs site*/
+::-moz-selection {
+  color: #eee732;
+  background-color: #1c1d1a;
+}
+::selection {
+  color: #eee732;
+  background-color: #1c1d1a;
+}
+
+.nopadding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Div inclinada*/
+.skewed {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  -webkit-transform: skewY(3deg);
+          transform: skewY(3deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+/*botão Whatsapp*/
+.zap {
+  position: fixed;
+  z-index: 4;
+  bottom: 5px;
+  right: 10px;
+  font-size: 15vh;
+  color: green;
+}
+
+.zap:hover {
+  font-size: 17vh;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+}
+
+.zap a {
+  text-decoration: none;
+  color: green;
+}
+
+/*HEADER MODIFICADO*/
+.semiCircle {
+  position: relative;
+  background: url("../midia/capa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  color: #ffffff;
+  text-shadow: 2px 2px #1c1d1a;
+}
+
+.semiCircle ::before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  z-index: 10;
+  width: 85px;
+  height: 90px;
+  border-radius: 50%;
+  background: #eee732;
+  background-image: url(../midia/foto.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  -webkit-transform: translateX(-50%) translateY(50%);
+          transform: translateX(-50%) translateY(50%);
+  bottom: 0px;
+}
+
+/*..............CONTAINERS................*/
+.container-fluid {
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  height: auto;
+}
+
+.botao {
+  border-radius: 4px;
+  border: 2px solid #949494;
+  background-color: #E4E1DB;
+  display: inline-block;
+  color: #1c1d1a;
+  font-family: "Chelsea Market", cursive;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 9px 27px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #242424;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.botao:hover {
+  background-color: #808080;
+}
+
+.botao :active {
+  padding-top: 1px;
+}
+
+p {
+  font-size: 1em;
+  margin: 0;
+  font-family: "Chelsea Market", cursive;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: "Chelsea Market", cursive;
+  margin: 0;
+  padding: 15px 0px 15px 0px;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-family: "Chelsea Market", cursive;
+  margin: 0;
+  padding: 15px 0px 15px 0px;
+}
+
+/*NAV BAR*/
+nav {
+  background-color: #eee732;
+  font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  background-color: transparent;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav li {
+  font-family: "Chelsea Market", cursive;
+  color: #ffff;
+  text-decoration: none;
+  padding-right: 10px;
+  list-style: none;
+  width: 100%;
+  text-shadow: 2px 2px #1c1d1a;
+}
+
+nav li:hover {
+  background: #1c1d1a;
+  color: #eee732;
+}
+
+/*HEADER CONTENTS*/
+.frase {
+  padding-left: 15px;
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+  text-indent: right;
+  vertical-align: top;
+  padding-top: 30px;
+}
+
+.frase h2 {
+  padding-left: 15px;
+}
+
+.frase .botao {
+  margin-top: 20px;
+}
+
+.dog {
+  display: inline-block;
+  text-align: right;
+}
+
+.dog img {
+  height: 350px;
+}
+
+.ta {
+  display: inline-block;
+  margin-left: 10%;
+}
+
+/*SECTION 1 biografia*/
+#biografia {
+  background-color: #1c1d1a;
+}
+
+#biografia .bio {
+  width: 100%;
+  display: inline-block;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+}
+
+#biografia .bio p {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+#biografia .skewed {
+  background: #1c1d1a;
+  background-image: url(../midia/patas.png);
+}
+
+#biografia .cursos {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: top;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 60px;
+  margin-top: 60px;
+}
+
+#biografia .cursos .programas {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#biografia .cursos .programas ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+#biografia .cursos .programas li {
+  border: none;
+  padding-right: 10px;
+}
+
+#biografia .cursos .programas :hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#biografia .cursos .programas a {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#biografia .cursos .programas a :hover {
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+}
+
+/*portofólio projetos*/
+#portfolio {
+  padding-top: 30px;
+  text-align: center;
+  background-color: #eee732;
+  background-image: url(../midia/head.png);
+  background-attachment: fixed;
+  padding-bottom: 90px;
+}
+
+#portfolio h1 {
+  margin-top: 0;
+  padding-top: 10px;
+  color: white;
+  font-family: "Chelsea Market", cursive;
+  width: 100%;
+  text-shadow: 2px 2px 2px black;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#portfolio .box {
+  width: 45vh;
+  height: 45vh;
+  border: 2px solid #d6d6d6;
+  border-radius: 3px;
+  overflow: hidden;
+  display: inline-block;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-box-shadow: 1px 2px 4px 1px black;
+          box-shadow: 1px 2px 4px 1px black;
+}
+
+#portfolio .box img {
+  width: 100%;
+  height: 100%;
+}
+
+#portfolio .box:hover {
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+  width: 290px;
+  height: 290px;
+  border: solid #1c1d1a 4px;
+}
+
+/*Footer*/
+#fim {
+  background-color: #1c1d1a;
+  background-image: url(../midia/patas.png);
+}
+
+#fim .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 100px;
+  width: 100%;
+}
+
+#fim .social {
+  margin: 10px;
+}
+
+#fim .social img {
+  width: 100%;
+}
+
+#fim .techa {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#fim .contato {
+  text-align: center;
+  color: #eee732;
+}
+
+.conteudo {
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+}
+
+@media (max-width: 400px) {
+  .frase {
+    width: 100%;
+    padding: 0;
+  }
+  nav {
+    position: relative;
+    background-color: #1c1d1a;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #1c1d1a;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px;
+  }
+  ul li {
+    padding: 0;
+    color: #eee732;
+  }
+}
+
+[data-anime] {
+  opacity: 0;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+[data-anime="center"] {
+  opacity: 0;
+}
+
+[data-anime].animate {
+  opacity: 1;
+}
+/*# sourceMappingURL=estilos.css.map */
